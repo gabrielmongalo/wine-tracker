@@ -1,0 +1,82 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Distribution/packaging
+*.egg-info/
+build/
+dist/
+
+# Python cache and logs
+*.log
+*.sqlite3
+*.pkl
+*.db
+
+# Environment variables
+.env
+.env.*
+.envrc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDEs and editors
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Tests and coverage
+htmlcov/
+.tox/
+.nox/
+.cache/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Docker
+*.dockerfile
+*.env.docker
+
+# MyPy
+.mypy_cache/
+
+# Bandit
+.bandit/
+
+# Linting
+.pylint.d/
+flake8.log
+
+# Miscellaneous
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Lock files for package managers (optional, include if used)
+poetry.lock
+Pipfile.lock
