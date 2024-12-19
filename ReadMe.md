@@ -176,7 +176,3 @@ hybrid-search-app/
 - [Qdrant Documentation](https://qdrant.tech/documentation/)
 - [Transformers by Hugging Face](https://huggingface.co/docs/transformers/)
 - [BM25 Algorithm](https://en.wikipedia.org/wiki/Okapi_BM25)
-
----
-
-Feel free to customize this as needed. Let me know if there are additional features or sections you'd like to include! 🚀
