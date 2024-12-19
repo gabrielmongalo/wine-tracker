@@ -24,6 +24,37 @@ Before starting, ensure the following are installed:
 
 ---
 
+## **Environment Variables**
+
+This project requires two environment variables to be set for proper integration with Qdrant:
+
+- **`QDRANT_API_KEY`**: Your Qdrant API key for authentication.
+- **`QDRANT_URL`**: The URL of your Qdrant instance (e.g., `http://localhost:6333` or your cloud instance URL).
+
+You can set these variables manually or use a `.envrc` file for automation.
+
+### **Using `.envrc` or `.envrc.template`**
+
+1. Copy the `.envrc.template` file to `.envrc`:
+
+   ```bash
+   cp .envrc.template .envrc
+   ```
+
+2. Open `.envrc` and update the variables:
+
+   ```bash
+   export QDRANT_API_KEY=your_api_key_here
+   export QDRANT_URL=http://localhost:6333
+   ```
+
+3. Load the `.envrc` using [direnv](https://direnv.net/):
+   ```bash
+   direnv allow
+   ```
+
+---
+
 ## **Installation**
 
 ### **Local Development**
@@ -153,7 +184,7 @@ make test
 ## **Project Structure**
 
 ```plaintext
-hybrid-search-app/
+wine-tracker/
 ├── app/                    # Application logic
 │   ├── models/             # Pydantic models
 │   ├── routes/             # API endpoints
@@ -164,6 +195,7 @@ hybrid-search-app/
 ├── requirements.txt        # Python dependencies
 ├── setup_env.sh            # Setup script for local development
 ├── Dockerfile              # Docker configuration
+├── .envrc.template         # Template for environment variables
 ├── makefile                # Common project commands
 └── ReadMe.md               # Project documentation
 ```
@@ -176,3 +208,9 @@ hybrid-search-app/
 - [Qdrant Documentation](https://qdrant.tech/documentation/)
 - [Transformers by Hugging Face](https://huggingface.co/docs/transformers/)
 - [BM25 Algorithm](https://en.wikipedia.org/wiki/Okapi_BM25)
+
+---
+
+### **Notes**
+
+If using a cloud Qdrant instance, ensure your `QDRANT_URL` and `QDRANT_API_KEY` are correctly set.
